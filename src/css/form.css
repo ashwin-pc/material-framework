@@ -2,6 +2,10 @@
   position:relative;
   margin-bottom:45px;
 }
+.form.full > input[type="text"],
+.form.full > select {
+  width: 100%;
+}
 .form > input[type="text"], .form > select {
   font-size:18px;
   padding:10px 10px 5px 5px;
