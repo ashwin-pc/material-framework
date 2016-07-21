@@ -4,18 +4,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Card Template</title>
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/form.css">
 	<link rel="stylesheet" href="css/card.css">
-	<link rel="stylesheet" href="css/button.css">	
+	<!-- <link rel="stylesheet" href="css/button.css"> -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="card card-1">
 	<h1>Card</h1>
-	<form id="calcForm">
+	<form id="calcForm" class="form">
+
+		<input type="text" name="v1" required="">
 		<label for="v1">First Value</label><br>
-		<input type="text" name="v1"><br>
+		<input type="text" name="v2" required="">
 		<label for="v2">Second Value</label><br>
-		<input type="text" name="v2"><br>
 		<select name="opt">
 			<option value="add">
 				Add
@@ -24,7 +26,7 @@
 			<option value="mul">Multiply</option>
 			<option value="div">Divide</option>
 		</select>
-		<input type="button" name="" value="Calculate" onclick="calculate()" class="button hover blue" />
+		<input type="button" name="" value="Calculate" onclick="calculate()" class="button raised red" />
 		<div id="result"></div>
 	</form>
 </div>

@@ -1,0 +1,40 @@
+.form {
+  position:relative;
+  margin-bottom:45px;
+}
+.form > input[type="text"], .form > select {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:2px solid rgba(117, 117, 117, 0.15);
+  transition: all 0.5s ease;
+}
+
+.form > input[type="text"]:focus{
+  border-bottom: 2px solid blue;
+}
+
+.form > input:focus, .form > select:focus { outline:none; }
+.form > input[type="button"],.form > button { margin-left: 0px;}
+
+/* LABEL ======================================= */
+.form > label {
+  color:#999;
+  font-size:18px;
+  font-weight:normal;
+  position:relative;;
+  pointer-events:none;
+  left:5px;
+  top:-35px;
+  transition:0.2s ease all;
+}
+
+/* active state */
+.form > input[type="text"]:focus + label,
+.form > input[type="text"]:valid + label {
+  top:-55px;
+  font-size:14px;
+  color:#5264AE;
+}
