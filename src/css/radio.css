@@ -1,0 +1,43 @@
+#calcForm > input[type="radio"]{
+    width: initial;
+    margin: 20px;
+}
+
+#calcForm > input[type="radio"]:before{
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-radius: 15px;
+    background-color: white;
+    border: 2px solid #929292;
+    display: block;
+    top: -3px;
+    left: -2px;
+    position: relative;
+    transition: all 0.1s ease;
+}
+
+#calcForm > input[type="radio"]:after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-radius: 15px;
+    background-color: #929292;
+    display: block;
+    top: -12px;
+    left: 6px;
+    position: relative;
+    transition: all 0.1s ease;
+}
+
+#calcForm > input[type="radio"]:checked:before{
+    border-color: #4285f4;
+}
+
+#calcForm > input[type="radio"]:checked:after{
+    background-color: #4285f4;
+    width: 9px;
+    height: 9px;
+    top: -16px;
+    left: 2px;
+}
