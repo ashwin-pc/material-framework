@@ -26,8 +26,11 @@
 			<option value="mul">Multiply</option>
 			<option value="div">Divide</option>
 		</select>
+		<input type="radio" name="gender" value="male"> Male
+	  <input type="radio" name="gender" value="female"> Female
+	  <input type="radio" name="gender" value="other"> Other<br>
 		<input type="submit" name="" value="Calculate" onclick="calculate()" class="button raised green" />
-		<input type="button" name="" value="Close" onclick="alert('Sorry this is just a demo')" class="button raised green" />
+		<input type="button" name="" value="Close" onclick="alert('Sorry this is just a demo')" class="button raised green"/>
 		<input type="text" name="result" disabled="">
 	</form>
 </div>
@@ -37,9 +40,9 @@
 	var r =  document.getElementById("result");
 	// calcBtn.addEventListener("click",calculate);
 
-	document.getElementById("calcForm").addEventListener("click", function(event){
-    event.preventDefault()
-	});
+	// document.getElementById("calcForm").addEventListener("click", function(event){
+  //   event.preventDefault()
+	// });
 
 	function calculate() {
 		// body...
