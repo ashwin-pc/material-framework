@@ -1,11 +1,22 @@
 body{
 	font-family:"Roboto",sans-serif;
-	background-image: url("../img/bg.JPG");
+	background-color: #efefef;
+	background-image: url("../img/bg.jpg");
+	padding: 0px;
+	margin: 0px;
 }
 
-h1{
+.card>h1{
 	margin-top: 0px;
 	text-align: center;
+}
+
+.card p,.card li{
+	color: #484848;
+}
+
+.card a{
+	text-decoration: none;
 }
 
 /*Set Box properties here*/
@@ -13,7 +24,7 @@ h1{
 .card.z-0{
 	width:500px;
 	margin: auto;
-	margin-top: 60px;
+	margin-top: 40px;
 	padding:40px;
 	border-radius: 2px;
 	background-color: white;

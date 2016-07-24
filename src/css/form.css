@@ -38,6 +38,8 @@
 .form > textarea {
   background-color: #f9f9f9;
   margin-top: 20px;
+  width: 100%;
+  max-width: 300px;
 }
 
 /* Label ======================================= */
@@ -166,7 +168,7 @@
     background-color: white;
     border: 2px solid #929292;
     display: block;
-    top: -5px;
+    top: -3px;
     left: -2px;
     position: relative;
     transition: all 0.3s ease;
@@ -185,6 +187,6 @@
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
   position: relative;
-  top: -20px;
+  top: -18px;
   left: 4px;
 }

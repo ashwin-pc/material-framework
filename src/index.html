@@ -1,55 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name=viewport content="width=device-width, initial-scale=1">
 	<title>Card Template</title>
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/form.css">
 	<link rel="stylesheet" href="css/card.css">
-	<!-- <link rel="stylesheet" href="css/button.css"> -->
+	<link rel="stylesheet" href="css/button.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="card large z-1 hover">
-	<h1>Card</h1>
-	<form id="calcForm" class="form full">
-
-		<input type="text" name="v1" required="">
-		<label for="v1">First Value</label><br>
-		<input type="text" name="v2" required="">
-		<label for="v2">Second Value</label><br>
-		<select name="opt">
-			<option value="add">
-				Add
-			</option>
-			<option value="sub">Subtract</option>
-			<option value="mul">Multiply</option>
-			<option value="div">Divide</option>
-		</select>
-		<input type="radio" name="gender" value="male"> Male
-	  <input type="radio" name="gender" value="female"> Female
-	  <input type="radio" name="gender" value="other"> Other<br>
-		<input type="submit" name="" value="Calculate" onclick="calculate()" class="button raised green" />
-		<input type="button" name="" value="Close" onclick="alert('Sorry this is just a demo')" class="button raised green"/>
-		<input type="text" name="result" disabled="">
-	</form>
-</div>
-<div class="card">
-	<form class="form" action="index.html" method="post">
-		<input type="text" name="name" value="" required>
-		<label>Something</label>
-	</form>
-</div>
+	<div class="card z-1 hover">
+		<h1>Demo App</h1>
+		<p>
+			This is a demo application to show the use of a very simple material
+			design framework over which rapid prototyping can be done.
+		</p>
+		<p>
+			With the use of very minimal class tags, we can get a good looking interface to sandbox and test our web application.
+		</p>
+		<p>
+			Shown in this demo are
+			<ul>
+				<li>card.css</li>
+				<li>button.css</li>
+				<li>form.css</li>
+			</ul>
+		</p>
+	</div>
+	<div class="card z-1">
+		<h1>Calculator</h1>
+		<form id="calcForm" class="form full">
+			<input type="text" name="v1" required="">
+			<label for="v1">First Value</label><br>
+			<input type="text" name="v2" required="">
+			<label for="v2">Second Value</label><br>
+			<select name="opt">
+				<option value="add">
+					Add
+				</option>
+				<option value="sub">Subtract</option>
+				<option value="mul">Multiply</option>
+				<option value="div">Divide</option>
+			</select>
+			<input type="button" name="" value="Calculate" onclick="calculate()" />
+			<input type="text" name="result" disabled="">
+		</form>
+	</div>
+	<div class="card z-1">
+		<h1>Other Form Attributes</h1>
+		<form class="form" action="index.html" method="post">
+			<input type="radio" name="gender" value="male"> Male
+		  <input type="radio" name="gender" value="female"> Female
+		  <input type="radio" name="gender" value="other"> Other<br>
+			<input type="checkbox" name="gender" value="male"> Male
+		  <input type="checkbox" name="gender" value="female"> Female
+		  <input type="checkbox" name="gender" value="other"> Other<br>
+			<textarea name="name" rows="8"></textarea>
+		</form>
+	</div>
+	<div class="card z-1">
+		<center>
+			<a href="https://github.com/ashwin-pc/material-framework">@GitHub. Get, Clone, Freely Modify the project<br/>www.github.com/ashwin-pc/material-framework</a><br/><br/>
+			<a href="http://designedbyashw.in" style="color:black"><span style="color:red;">Designed By</span> Ashwin P Chandran</a>
+		</center>
+	</div>
 <script type="text/javascript">
-	var calcBtn = document.getElementById("calcForm");
 	var form = document.getElementById("calcForm");
 	var r =  document.getElementById("result");
-	// calcBtn.addEventListener("click",calculate);
-
-	// document.getElementById("calcForm").addEventListener("click", function(event){
-  //   event.preventDefault()
-	// });
-
 	function calculate() {
 		// body...
 		var a = parseInt(form.v1.value);
