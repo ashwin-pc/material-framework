@@ -67,9 +67,6 @@
 .form > input[type="submit"] {
   display: inline-block;
   position: relative;
-  /*width: 120px;*/
-  /*height: 36px;*/
-  /*line-height: 32px;*/
   border-radius: 2px;
   font-size: 0.9em;
   background-color: #4285f4;

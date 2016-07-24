@@ -1,5 +1,37 @@
 # Readme.md
 
+## card.css
+##### Basic Syntax
+    <div class="card">
+      Enter card contents here...
+    </div>
+
+### Options
+With additional classes added to the Basic syntax we can control the various depth level and hover effect of the card styling.
+
+1. Hover
+2. Z-depth
+ - z-0 to z-6
+3. Size and Column
+ - small (width : 300px)
+ - regular (width : 500px) _(default)_
+ - large (width : 700px)
+
+Example:
+
+    <div class="card large hover z-1">
+      Enter Card contents here...
+    </div>
+
+##### Points to Note
+- The card width can be manually set with the following syntax. This must however be used with caution when 2col class is added to the card div.
+
+
+    .card{
+      width: //Set width here;
+    }
+- The Card will follow the full device width when device-width < card-width.
+
 ## button.css
 ##### Basic Syntax
     <button class="button">Button</button>
@@ -46,7 +78,6 @@ The useage of the form CSS styles has been kept very simple in-order to aide the
 2. Change color of button by giving it an id or class and setting its background-color & color attributes.
 3. add class full to the form to set text box, text area, select options to full form width.
 4. The form by default has no margins. Set a margin attribute to the form class if necessary.
-5. The framework is not yet responsive. Support will be added soon for it.
 
 #### Elements supported
 - [x] Text input with Label

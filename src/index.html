@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="card card-1">
+<div class="card large z-1 hover">
 	<h1>Card</h1>
 	<form id="calcForm" class="form full">
 
@@ -32,6 +32,12 @@
 		<input type="submit" name="" value="Calculate" onclick="calculate()" class="button raised green" />
 		<input type="button" name="" value="Close" onclick="alert('Sorry this is just a demo')" class="button raised green"/>
 		<input type="text" name="result" disabled="">
+	</form>
+</div>
+<div class="card">
+	<form class="form" action="index.html" method="post">
+		<input type="text" name="name" value="" required>
+		<label>Something</label>
 	</form>
 </div>
 <script type="text/javascript">
