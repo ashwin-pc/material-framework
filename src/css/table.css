@@ -1,0 +1,23 @@
+/* Table style*/
+.table{
+  border-collapse: collapse;
+}
+.table,.table th,.table td{
+  border: 1px solid #e8e8e8;
+  padding: 5px;
+}
+.table.alternate tr:nth-child(even){
+  background-color: #efefef;
+}
+.table th{
+  background-color: #607d8b;
+  color: white;
+  font-weight: 400;
+}
+.table.full{
+  width:100%;
+  text-align: left;
+}
+.table.center{
+  text-align: center;
+}

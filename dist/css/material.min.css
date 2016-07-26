@@ -222,7 +222,6 @@ body {
 }
 .form {
   position: relative;
-  margin-bottom: 45px;
   font: 18px Arial;
 }
 
@@ -447,4 +446,34 @@ body {
   position: relative;
   top: -18px;
   left: 4px;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.table,
+.table td,
+.table th {
+  border: 1px solid #e8e8e8;
+  padding: 5px;
+}
+
+.table.alternate tr:nth-child(even) {
+  background-color: #efefef;
+}
+
+.table th {
+  background-color: #607d8b;
+  color: #fff;
+  font-weight: 400;
+}
+
+.table.full {
+  width: 100%;
+  text-align: left;
+}
+
+.table.center {
+  text-align: center;
 }

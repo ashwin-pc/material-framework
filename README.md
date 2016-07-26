@@ -3,8 +3,9 @@
 ## Highlights
 The Material Framework is a combination of individual files, namely:
 - card.css
-- form.css
 - button.css
+- form.css
+- table.css
 - fonts.css
 
 they can be added either individually, or as a whole using the `material.min.css` file based on the need of the application.
@@ -51,7 +52,7 @@ Example:
 .card{
   width: //Set width here;
 }
-```` 
+````
 
 - The Card will follow the full device width when `device-width < card-width`.
 - the `<h1>` tag is by default Center aligned with 0 top margin. Use it for card titles. Use other heading tags for subheadings for the card.
@@ -97,7 +98,7 @@ Example:
 
 ## form.css
 ### Usage
-The useage of the form CSS styles has been kept very simple in-order to aide their ease of use. The form elements can be used normally without any class declarations, except in the form tag itself.
+The usage of the form CSS styles has been kept very simple in-order to aide their ease of use. The form elements can be used normally without any class declarations, except in the form tag itself.
 
 ### Syntax
 ````
@@ -114,7 +115,7 @@ The useage of the form CSS styles has been kept very simple in-order to aide the
 <label>Label for above input</label>
 ````
 
-2. Change color of button by giving it an id or class and setting its background-color & color attributes.
+2. Change color of button by giving it an id or class and setting its `background-color` & `color` attributes.
 3. add class full to the form to set text box, text area, select options to full form width.
 4. The form by default has no margins. Set a margin attribute to the form class if necessary.
 
@@ -138,3 +139,23 @@ The useage of the form CSS styles has been kept very simple in-order to aide the
 
 #### Known issues
 - Invalid values for text inputs with labels will result in the label returning to its default state when focus is lost.
+
+## table.css
+### Basic Syntax
+````
+<table class="table">
+  //Table contents
+</table>
+````
+
+### Options
+- full _(width : 100%)_
+- alternate _(alternate color rows)_
+- center _(center align table cells)_
+
+Example:
+````
+<table class="table full alternate center">
+  //Table contents
+</table>
+````

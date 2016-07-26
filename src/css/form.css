@@ -1,6 +1,5 @@
 .form {
   position:relative;
-  margin-bottom:45px;
   font: 18px Arial;
 }
 .form.full > input[type="text"],
