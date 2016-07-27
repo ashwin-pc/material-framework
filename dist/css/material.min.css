@@ -3,9 +3,16 @@
   text-align: center;
 }
 
-.button {
+.button,
+.chip {
   display: inline-block;
   position: relative;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: Roboto,sans-serif;
+}
+
+.button {
   border-radius: 2px;
   font-size: .9em;
   background-color: #fff;
@@ -13,10 +20,7 @@
   border: none;
   padding: 8px 12px;
   margin: 12px;
-  font-weight: 500;
   text-transform: uppercase;
-  text-decoration: none;
-  font-family: Roboto,sans-serif;
 }
 
 .button.hover {
@@ -79,6 +83,46 @@
 
 .label-red {
   color: #d23f31;
+}
+
+.chip {
+  border-radius: 25px;
+  font-size: 13px;
+  background-color: #f1f1f1;
+  color: #5c5c5c;
+  border: none;
+  padding: 7px 12px;
+  margin: 5px;
+  opacity: 1;
+  transition: all .2s ease;
+}
+
+.chip.white {
+  background-color: #fff;
+}
+
+.chip.blue {
+  background-color: #4285f4;
+  color: #fff;
+}
+
+.chip.green {
+  background-color: #0f9d58;
+  color: #fff;
+}
+
+.chip.red {
+  background-color: #F44336;
+  color: #fff;
+}
+
+.chip.blueGrey {
+  background-color: #607D8B;
+  color: #fff;
+}
+
+.chip:hover {
+  opacity: .7;
 }
 body {
   font-family: Roboto,sans-serif;

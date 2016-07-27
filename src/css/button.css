@@ -77,10 +77,52 @@
 }
 
 .label-blue {
-  color: #4285f4; 
+  color: #4285f4;
 }
 
 .label-red {
-  color: #d23f31; 
+  color: #d23f31;
 }
 
+/* Chip Style */
+.chip{
+  display: inline-block;
+  position: relative;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: #f1f1f1;
+  color: #5c5c5c;
+  border: none;
+  padding: 7px 12px;
+  margin: 5px;
+  text-decoration: none;
+  font-family: "Roboto",sans-serif;
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+.chip.white{
+  background-color: white;
+}
+.chip.blue {
+  background-color: #4285f4;
+  color: #fff;
+}
+
+.chip.green {
+  background-color: #0f9d58;
+  color: #fff;
+}
+
+.chip.red {
+  background-color: #F44336;
+  color: #fff;
+}
+
+.chip.blueGrey {
+  background-color: #607D8B;
+  color: #fff;
+}
+.chip:hover{
+  opacity: 0.7;
+}
