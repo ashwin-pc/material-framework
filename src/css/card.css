@@ -22,7 +22,8 @@ body{
 /*Set Box properties here*/
 .card,
 .card.z-0{
-	width:500px;
+	width:98%;
+	max-width: 500px;
 	margin: auto;
 	margin-top: 40px;
 	padding:40px;
@@ -56,19 +57,9 @@ body{
 }
 
 /* Card Size */
-.card.small{width: 300px;}
-.card.large{width: 700px;}
+.card.small{max-width: 300px;}
+.card.large{max-width: 700px;}
 
-/* Responsive Section */
-@media (max-width: 360px) {
-    .card.small {width: 98%;}
-}
-@media (max-width: 560px) {
-    .card {width: 98%;}
-}
-@media (max-width: 768px) {
-    .card.large {width: 98%;}
-}
 
 *{
 	box-sizing: border-box;

@@ -1,14 +1,29 @@
 .form {
   position:relative;
-  margin-bottom:45px;
   font: 18px Arial;
 }
 .form.full > input[type="text"],
+.form.full > input[type="number"],
+.form.full > input[type="email"],
+.form.full > input[type="password"],
+.form.full > input[type="color"],
+.form.full > input[type="date"],
+.form.full > input[type="tel"],
+.form.full > input[type="time"],
+.form.full > input[type="url"],
 .form.full > select,
 .form.full > textarea {
   width: 100%;
 }
 .form > input[type="text"],
+.form > input[type="number"],
+.form > input[type="email"],
+.form > input[type="password"],
+.form > input[type="color"],
+.form > input[type="date"],
+.form > input[type="tel"],
+.form > input[type="time"],
+.form > input[type="url"],
 .form > select,
 .form > textarea {
   font-size:18px;
@@ -22,6 +37,14 @@
 }
 
 .form > input[type="text"]:focus,
+.form > input[type="number"]:focus,
+.form > input[type="email"]:focus,
+.form > input[type="password"]:focus,
+.form > input[type="color"]:focus,
+.form > input[type="date"]:focus,
+.form > input[type="tel"]:focus,
+.form > input[type="time"]:focus,
+.form > input[type="url"]:focus,
 .form > textarea:focus {
   border-bottom: 2px solid #4285f4;
 }
@@ -56,7 +79,21 @@
 
 /* active state */
 .form > input[type="text"]:focus + label,
-.form > input[type="text"]:valid + label {
+.form > input[type="text"]:valid + label,
+.form > input[type="number"]:focus + label,
+.form > input[type="number"]:valid + label,
+.form > input[type="email"]:focus + label,
+.form > input[type="email"]:valid + label,
+.form > input[type="password"]:focus + label,
+.form > input[type="password"]:valid + label,
+.form > input[type="color"]:focus + label,
+.form > input[type="color"]:valid + label,
+.form > input[type="date"] + label,
+.form > input[type="tel"]:focus + label,
+.form > input[type="tel"]:valid + label,
+.form > input[type="time"] + label,
+.form > input[type="url"]:focus + label,
+.form > input[type="url"]:valid + label  {
   top:-55px;
   font-size:14px;
   color:#5264AE;

@@ -1,0 +1,26 @@
+{
+  "name": "material-framework",
+  "version": "0.1.0",
+  "description": "First version ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashwin-pc/material-framework.git"
+  },
+  "author": "Ashwin Pc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashwin-pc/material-framework/issues"
+  },
+  "homepage": "https://github.com/ashwin-pc/material-framework#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.11",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-rename": "^1.2.2"
+  }
+}
