@@ -59,7 +59,9 @@ Example:
 - A background image can be set by placing a file named `bg.jpg` in img folder of the root directory
 
 ## button.css
-##### Basic Syntax
+>for Buttons and chips
+
+##### Basic Syntax (Button)
 ````
 <button class="button">Button</button>
 ````    
@@ -67,6 +69,11 @@ or
 ````
 <input type="button" class="button" value="Button"/>
 ````
+or
+````
+<a class="button" ref="">Button</a>
+````
+
 Use the standard HTML syntax for buttons, but add a class of "button" to implement the style. For adding other options, just add the other classes to the same class attribute.
 
 ### Options
@@ -95,6 +102,19 @@ Example:
   background-color: //Set button color here;
 }
 ````
+
+##### Basic Syntax (Chip)
+````
+<a class="chip" href="">Chip</a>
+````
+
+Useful for styling hyperlinks as chips
+
+### Colors
+ - blue
+ - red
+ - green
+ - blueGrey
 
 ## form.css
 ### Usage
