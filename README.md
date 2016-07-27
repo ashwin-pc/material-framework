@@ -50,7 +50,7 @@ Example:
 
 ````
 .card{
-  width: //Set width here;
+  max-width: //Set width here;
 }
 ````
 
