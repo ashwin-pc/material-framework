@@ -138,6 +138,11 @@ The usage of the form CSS styles has been kept very simple in-order to aide thei
 2. Change color of button by giving it an id or class and setting its `background-color` & `color` attributes.
 3. add class full to the form to set text box, text area, select options to full form width.
 4. The form by default has no margins. Set a margin attribute to the form class if necessary.
+5. The `* for Required` can be added to the form by putting a class of required to the label as shown below
+
+````
+<label class="required">Name</label>
+````
 
 #### Elements supported
 - [x] Text input with Label

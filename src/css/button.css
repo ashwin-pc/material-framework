@@ -2,17 +2,14 @@
 .button {
   display: inline-block;
   position: relative;
-  /*width: 120px;*/
-  /*height: 36px;*/
-  /*line-height: 32px;*/
   border-radius: 2px;
-  font-size: 0.9em;
+  font-size: 11pt;
   background-color: #fff;
   color: #646464;
   border: none;
-  padding: 8px 12px;
+  padding: 13px 16px;
   margin: 12px;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
