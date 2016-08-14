@@ -4,7 +4,8 @@
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<title>Card Template</title>
 	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="../dist/css/material.min.css">
+	<link rel="stylesheet" href="css/material.min.css">
+	<link rel="stylesheet" href="css/tab.css">
 	<link rel="stylesheet" href="css/form.css">
 	<link rel="stylesheet" href="css/table.css">
 	<link rel="stylesheet" href="css/card.css">
@@ -12,6 +13,13 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<nav class="nav z-1">
+	  <h1>Material Demo</h1>
+	  <ul> <!-- Optional Links -->
+	    <li><a href="http://designedbyashw.in">Home</a></li>
+	    <li><a href="https://github.com/ashwin-pc/material-framework">GIT Repo</a></li>
+	  </ul>
+	</nav>
 	<div class="card z-1 hover">
 		<h1>Demo App</h1>
 		<p>
@@ -25,6 +33,7 @@
 			Shown in this demo are
 			<ul>
 				<li>card.css</li>
+				<li>tab.css</li>
 				<li>button.css</li>
 				<li>form.css</li>
 				<li>table.css</li>
@@ -49,6 +58,17 @@
 			<input type="button" name="" value="Calculate" onclick="calculate()" />
 			<input type="text" name="result" disabled="">
 		</form>
+	</div>
+	<div class="card z-1" id="tabDemo">
+		<h1>Tab Demo</h1>
+		<ul class="tab">
+			<li><a href="#">Demo</a></li>
+			<li><a href="#">Tab</a></li>
+		</ul>
+		<ul class="tab light">
+			<li><a href="#">Demo</a></li>
+			<li><a href="#">Tab Light</a></li>
+		</ul>
 	</div>
 	<div class="card z-1">
 		<h1>Other Form Attributes</h1>

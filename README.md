@@ -6,6 +6,7 @@ The Material Framework is a combination of individual files, namely:
 - button.css
 - form.css
 - table.css
+- tab.css
 - fonts.css
 
 they can be added either individually, or as a whole using the `material.min.css` file based on the need of the application.
@@ -63,7 +64,7 @@ Example:
 ````
 <nav class="nav">
   <h1>Brand Name</h1>
-  <ul> //Optional Links
+  <ul> <!-- Optional Links -->
     <li><a href="#">Link 1</a></li>
     <li><a href="#">Link 2</a></li>
     <li><a href="#">Link 3</a></li>
@@ -85,7 +86,7 @@ Example:
 ````
 
 ##### Points to Note
-- By default the Navbar links will be hidden in small screens. The arrow to reveal them isn't functional yet. Use the showSmall class 
+- By default the Navbar links will be hidden in small screens. The arrow to reveal them isn't functional yet. Use the showSmall class
 to display it instead.
 
 ## button.css
@@ -213,4 +214,28 @@ Example:
 <table class="table full alternate center">
   //Table contents
 </table>
+````
+
+## tab.css
+### Basic Syntax
+````
+<ul class="tab">
+  <li><a>First tab</a></li>
+  <li><a>Second tab</a></li>
+</ul>
+````
+
+### Important
+1. The tab links must be nested inside an anchor tag in the list items.
+2. Only works for unordered list.
+
+### Options
+- light _(the default is dark theme)_
+
+Example:
+````
+<ul class="tab light">
+  <li><a>First tab</a></li>
+  <li><a>Second tab</a></li>
+</ul>
 ````
