@@ -22,6 +22,7 @@ they can be added either individually, or as a whole using the `material.min.css
  save the fonts folder from this repo _(from src or dist directory)_ in your project following this structure to use an offline version of the Roboto font with this framework.
 
 ## card.css
+> For Cards and Navbar
 ##### Basic Syntax
 ````
 <div class="card">
@@ -57,6 +58,35 @@ Example:
 - The Card will follow the full device width when `device-width < card-width`.
 - the `<h1>` tag is by default Center aligned with 0 top margin. Use it for card titles. Use other heading tags for subheadings for the card.
 - A background image can be set by placing a file named `bg.jpg` in img folder of the root directory
+
+#### Basic Syntax (Navbar)
+````
+<nav class="nav">
+  <h1>Brand Name</h1>
+  <ul> //Optional Links
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+  </ul>
+</nav>
+````
+
+### Options
+1. Z - Depth
+ - z-0 to z-6
+2. Black and White theme (Default: white)
+ - black
+3. Do not hide links in small screens
+ - showSmall
+
+ Example:
+````
+<nav class="nav black showSmall z-2">....</nav>
+````
+
+##### Points to Note
+- By default the Navbar links will be hidden in small screens. The arrow to reveal them isn't functional yet. Use the showSmall class 
+to display it instead.
 
 ## button.css
 >for Buttons and chips
@@ -138,6 +168,11 @@ The usage of the form CSS styles has been kept very simple in-order to aide thei
 2. Change color of button by giving it an id or class and setting its `background-color` & `color` attributes.
 3. add class full to the form to set text box, text area, select options to full form width.
 4. The form by default has no margins. Set a margin attribute to the form class if necessary.
+5. The `* for Required` can be added to the form by putting a class of required to the label as shown below
+
+````
+<label class="required">Name</label>
+````
 
 #### Elements supported
 - [x] Text input with Label

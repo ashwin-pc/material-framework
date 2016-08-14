@@ -13,7 +13,13 @@ gulp.task('build', function(){
         }))
       .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
       .pipe(concat('material.min.css'))
+      .pipe(cleanCSS({debug: true}, function(details) {
+            console.log(details.name + ': ' + details.stats.originalSize);
+            console.log(details.name + ': ' + details.stats.minifiedSize);
+        }))
       .pipe(gulp.dest('dist/css'))
   gulp.src('src/fonts/**/*.*')
       .pipe(gulp.dest('dist/fonts'))
+  gulp.src('src/index.html')
+      .pipe(gulp.dest('dist'))
 });
