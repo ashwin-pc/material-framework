@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Material-framework by ashwin-pc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Material-framework</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/ashwin-pc/material-framework" class="btn">View on GitHub</a>
+      <a href="https://github.com/ashwin-pc/material-framework/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/ashwin-pc/material-framework/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="material-framework" class="anchor" href="#material-framework" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Material Framework</h1>
+
+<h2>
+<a id="highlights" class="anchor" href="#highlights" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Highlights</h2>
+
+<p>The Material Framework is a combination of individual files, namely:</p>
+
+<ul>
+<li>card.css</li>
+<li>button.css</li>
+<li>form.css</li>
+<li>table.css</li>
+<li>tab.css</li>
+<li>fonts.css</li>
+</ul>
+
+<p>they can be added either individually, or as a whole using the <code>material.min.css</code> file based on the need of the application.</p>
+
+<h5>
+<a id="project-structure-optional" class="anchor" href="#project-structure-optional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Structure (optional)</h5>
+
+<pre><code>.
+├── css
+├── js
+├── img
+└── fonts
+ html files
+</code></pre>
+
+<p>save the fonts folder from this repo <em>(from src or dist directory)</em> in your project following this structure to use an offline version of the Roboto font with this framework.</p>
+
+<h2>
+<a id="cardcss" class="anchor" href="#cardcss" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>card.css</h2>
+
+<blockquote>
+<p>For Cards and Navbar</p>
+
+<h5>
+<a id="basic-syntax" class="anchor" href="#basic-syntax" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Basic Syntax</h5>
+
+<pre><code>&lt;div class="card"&gt;
+  Enter card contents here...
+&lt;/div&gt;
+</code></pre>
+
+<h3>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Options</h3>
+
+<p>With additional classes added to the Basic syntax we can control the various depth level and hover effect of the card styling.</p>
+</blockquote>
+
+<ol>
+<li>Hover</li>
+<li>Z-depth
+
+<ul>
+<li>z-0 to z-6</li>
+</ul>
+</li>
+<li>Size and Column
+
+<ul>
+<li>small (width : 300px)</li>
+<li>regular (width : 500px) <em>(default)</em>
+</li>
+<li>large (width : 700px)</li>
+</ul>
+</li>
+</ol>
+
+<p>Example:</p>
+
+<pre><code>&lt;div class="card large hover z-1"&gt;
+  Enter Card contents here...
+&lt;/div&gt;
+</code></pre>
+
+<h5>
+<a id="points-to-note" class="anchor" href="#points-to-note" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Points to Note</h5>
+
+<ul>
+<li>The card width can be manually set with the following syntax.</li>
+</ul>
+
+<pre><code>.card{
+  max-width: //Set width here;
+}
+</code></pre>
+
+<ul>
+<li>The Card will follow the full device width when <code>device-width &lt; card-width</code>.</li>
+<li>the <code>&lt;h1&gt;</code> tag is by default Center aligned with 0 top margin. Use it for card titles. Use other heading tags for subheadings for the card.</li>
+<li>A background image can be set by placing a file named <code>bg.jpg</code> in img folder of the root directory</li>
+</ul>
+
+<h4>
+<a id="basic-syntax-navbar" class="anchor" href="#basic-syntax-navbar" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Basic Syntax (Navbar)</h4>
+
+<pre><code>&lt;nav class="nav"&gt;
+  &lt;h1&gt;Brand Name&lt;/h1&gt;
+  &lt;ul&gt; &lt;!-- Optional Links --&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+
+<h3>
+<a id="options-1" class="anchor" href="#options-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Options</h3>
+
+<ol>
+<li>Z - Depth
+
+<ul>
+<li>z-0 to z-6</li>
+</ul>
+</li>
+<li>Black and White theme (Default: white)
+
+<ul>
+<li>black</li>
+</ul>
+</li>
+<li>
+<p>Do not hide links in small screens</p>
+
+<ul>
+<li>showSmall</li>
+</ul>
+
+<p>Example:</p>
+</li>
+</ol>
+
+<pre><code>&lt;nav class="nav black showSmall z-2"&gt;....&lt;/nav&gt;
+</code></pre>
+
+<h5>
+<a id="points-to-note-1" class="anchor" href="#points-to-note-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Points to Note</h5>
+
+<ul>
+<li>By default the Navbar links will be hidden in small screens. The arrow to reveal them isn't functional yet. Use the showSmall class
+to display it instead.</li>
+</ul>
+
+<h2>
+<a id="buttoncss" class="anchor" href="#buttoncss" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>button.css</h2>
+
+<blockquote>
+<p>for Buttons and chips</p>
+</blockquote>
+
+<h5>
+<a id="basic-syntax-button" class="anchor" href="#basic-syntax-button" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Basic Syntax (Button)</h5>
+
+<pre><code>&lt;button class="button"&gt;Button&lt;/button&gt;
+</code></pre>
+
+<p>or</p>
+
+<pre><code>&lt;input type="button" class="button" value="Button"/&gt;
+</code></pre>
+
+<p>or</p>
+
+<pre><code>&lt;a class="button" ref=""&gt;Button&lt;/a&gt;
+</code></pre>
+
+<p>Use the standard HTML syntax for buttons, but add a class of "button" to implement the style. For adding other options, just add the other classes to the same class attribute.</p>
+
+<h3>
+<a id="options-2" class="anchor" href="#options-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Options</h3>
+
+<ol>
+<li>Effects
+
+<ul>
+<li>hover</li>
+<li>raised</li>
+</ul>
+</li>
+<li>colors
+
+<ul>
+<li>grey</li>
+<li>blue</li>
+<li>red</li>
+<li>green</li>
+<li>blueGrey</li>
+</ul>
+</li>
+<li>narrow</li>
+</ol>
+
+<p>Example:</p>
+
+<pre><code>&lt;input type="button" class="button hover blue narrow" value="button"/&gt;
+</code></pre>
+
+<h5>
+<a id="points-to-note-2" class="anchor" href="#points-to-note-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Points to Note</h5>
+
+<ul>
+<li>The button can be manually set with the following syntax. Remember to add the custom color class to the button element.</li>
+</ul>
+
+<pre><code>.button.customColor{
+  color: //Set text color here;
+  background-color: //Set button color here;
+}
+</code></pre>
+
+<h5>
+<a id="basic-syntax-chip" class="anchor" href="#basic-syntax-chip" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Basic Syntax (Chip)</h5>
+
+<pre><code>&lt;a class="chip" href=""&gt;Chip&lt;/a&gt;
+</code></pre>
+
+<p>Useful for styling hyperlinks as chips</p>
+
+<h3>
+<a id="colors" class="anchor" href="#colors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Colors</h3>
+
+<ul>
+<li>blue</li>
+<li>red</li>
+<li>green</li>
+<li>blueGrey</li>
+</ul>
+
+<h2>
+<a id="formcss" class="anchor" href="#formcss" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>form.css</h2>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
+
+<p>The usage of the form CSS styles has been kept very simple in-order to aide their ease of use. The form elements can be used normally without any class declarations, except in the form tag itself.</p>
+
+<h3>
+<a id="syntax" class="anchor" href="#syntax" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Syntax</h3>
+
+<pre><code>&lt;form class="form"&gt;
+   &lt;!-- Enter form code here --&gt;
+&lt;/form&gt;
+</code></pre>
+
+<h4>
+<a id="important" class="anchor" href="#important" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Important</strong>
+</h4>
+
+<ol>
+<li>For text inputs, the label element <strong>MUST BE PRESENT</strong> and kept as the <strong>very next tag</strong> following the input text tag, and the input text element <strong>MUST BE DECLARED required</strong>
+</li>
+</ol>
+
+<pre><code>&lt;input type="text" required/&gt;
+&lt;label&gt;Label for above input&lt;/label&gt;
+</code></pre>
+
+<ol>
+<li>Change color of button by giving it an id or class and setting its <code>background-color</code> &amp; <code>color</code> attributes.</li>
+<li>add class full to the form to set text box, text area, select options to full form width.</li>
+<li>The form by default has no margins. Set a margin attribute to the form class if necessary.</li>
+<li>The <code>* for Required</code> can be added to the form by putting a class of required to the label as shown below</li>
+</ol>
+
+<pre><code>&lt;label class="required"&gt;Name&lt;/label&gt;
+</code></pre>
+
+<h4>
+<a id="elements-supported" class="anchor" href="#elements-supported" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Elements supported</h4>
+
+<ul>
+<li>[x] Text input with Label
+
+<ul>
+<li>text</li>
+<li>number</li>
+<li>email</li>
+<li>password</li>
+<li>color</li>
+<li>date</li>
+<li>tel</li>
+<li>time</li>
+<li>url</li>
+</ul>
+</li>
+<li>[x] Select options</li>
+<li>[x] Default and Submit buttons</li>
+<li>[x] Disabled button</li>
+<li>[x] Text area</li>
+<li>[x] Radio</li>
+<li>[x] Check Box</li>
+</ul>
+
+<h4>
+<a id="known-issues" class="anchor" href="#known-issues" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Known issues</h4>
+
+<ul>
+<li>Invalid values for text inputs with labels will result in the label returning to its default state when focus is lost.</li>
+</ul>
+
+<h2>
+<a id="tablecss" class="anchor" href="#tablecss" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>table.css</h2>
+
+<h3>
+<a id="basic-syntax-1" class="anchor" href="#basic-syntax-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Basic Syntax</h3>
+
+<pre><code>&lt;table class="table"&gt;
+  //Table contents
+&lt;/table&gt;
+</code></pre>
+
+<h3>
+<a id="options-3" class="anchor" href="#options-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Options</h3>
+
+<ul>
+<li>full <em>(width : 100%)</em>
+</li>
+<li>alternate <em>(alternate color rows)</em>
+</li>
+<li>center <em>(center align table cells)</em>
+</li>
+</ul>
+
+<p>Example:</p>
+
+<pre><code>&lt;table class="table full alternate center"&gt;
+  //Table contents
+&lt;/table&gt;
+</code></pre>
+
+<h2>
+<a id="tabcss" class="anchor" href="#tabcss" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>tab.css</h2>
+
+<h3>
+<a id="basic-syntax-2" class="anchor" href="#basic-syntax-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Basic Syntax</h3>
+
+<pre><code>&lt;ul class="tab"&gt;
+  &lt;li&gt;&lt;a&gt;First tab&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a&gt;Second tab&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<h3>
+<a id="important-1" class="anchor" href="#important-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Important</h3>
+
+<ol>
+<li>The tab links must be nested inside an anchor tag in the list items.</li>
+<li>Only works for unordered list.</li>
+</ol>
+
+<h3>
+<a id="options-4" class="anchor" href="#options-4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Options</h3>
+
+<ul>
+<li>light <em>(the default is dark theme)</em>
+</li>
+</ul>
+
+<p>Example:</p>
+
+<pre><code>&lt;ul class="tab light"&gt;
+  &lt;li&gt;&lt;a&gt;First tab&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a&gt;Second tab&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<h2>
+<a id="download" class="anchor" href="#download" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download</h2>
+
+<p><a href="https://github.com/ashwin-pc/material-framework/raw/master/dist/css/material.min.css">material.css</a></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/ashwin-pc/material-framework">Material-framework</a> is maintained by <a href="https://github.com/ashwin-pc">ashwin-pc</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
